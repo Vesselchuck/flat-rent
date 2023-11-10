@@ -1,0 +1,80 @@
+:root {
+  --primary: rgb(255, 255, 255);
+  --primary-alt: rgb(248, 248, 248);
+  --secondary: hsl(219, 79%, 66%);
+  --secondary-active: hsl(240, 100%, 40%);
+  --secondary-hover: hsl(225, 73%, 57%);
+  --success: rgb(61, 194, 105);
+  --tertiary: rgb(204, 204, 204);
+  --tertiary-active: rgb(192, 192, 192);
+  --tertiary-hover: rgb(220, 220, 220);
+  --text: rgb(13, 13, 13);
+  --text-alt: rgb(248, 248, 248);
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--text);
+}
+body main .tab {
+  background-color: var(--secondary);
+  border-color: var(--tertiary);
+}
+body main .tab button {
+  color: var(--text-alt);
+}
+body main .tab button:hover {
+  background-color: var(--secondary-hover);
+}
+body main .tab button.active {
+  background-color: var(--secondary-active);
+}
+body main .tab.months {
+  background-color: var(--primary-alt);
+}
+body main .tab.months button {
+  color: var(--text);
+}
+body main .tab.months button.active {
+  background-color: var(--tertiary-active);
+}
+body main .tab.months button:hover {
+  background-color: var(--tertiary-hover);
+}
+body main .container {
+  border-color: var(--tertiary);
+  background-color: var(--primary-alt);
+}
+body .copy-button-container #copy-button {
+  background-color: var(--secondary);
+  border-color: transparent;
+  color: var(--text-alt);
+}
+body .copy-button-container #copy-button:hover {
+  background-color: var(--secondary-hover);
+}
+body .copy-button-container #copy-button:active {
+  background-color: var(--secondary-active);
+}
+body .theme-button-container #theme-button {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--secondary);
+}
+body .theme-button-container #theme-button:hover {
+  color: var(--secondary-hover);
+}
+body .theme-button-container #theme-button:active {
+  color: var(--secondary-active);
+}
+body .lang-button-container #lang-button {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--secondary);
+}
+body .lang-button-container #lang-button:hover {
+  color: var(--secondary-hover);
+}
+body .lang-button-container #lang-button:active {
+  color: var(--secondary-active);
+}/*# sourceMappingURL=color.css.map */

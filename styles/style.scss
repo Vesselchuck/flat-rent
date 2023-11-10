@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Ledger&family=Neucha&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --moon: inline-block;
+  --sun: none;
+}
+
+body {
+  animation: fadeEffect 1s;
+  -webkit-animation: fadeEffect 1s;
+  font-family: "Open Sans";
+
+  header {
+    font-family: "Ledger";
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      margin-top: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: auto auto 1.25rem auto;
+      max-width: 44rem;
+    }
+  }
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 48.15rem;
+
+    /* Style the tab */
+    .tab {
+      border: 1px solid;
+      border-radius: 0.25rem 0.25rem 0 0;
+      overflow: hidden;
+
+      /* Style the buttons inside the tab */
+      button {
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+        float: left;
+        font-size: 17px;
+        font-weight: 900;
+        outline: none;
+        padding: 14px 1.095rem;
+        transition: 0.3s;
+      }
+    }
+
+    .tab.months {
+      border-radius: 0 0 0 0.25rem;
+      border-top: none;
+      float: left;
+      height: auto;
+      max-width: 15rem;
+      height: 24rem;
+
+      button {
+        display: block;
+        font-weight: 600;
+        padding: 22px 16px;
+        text-align: center;
+        width: 7.5rem;
+      }
+    }
+
+    .container {
+      border: 1px solid;
+      border-left: none;
+      border-top: none;
+      border-radius: 0 0 0.25rem 0;
+      float: left;
+      height: 24rem;
+      padding: 0px 16px;
+      width: 31rem;
+    }
+
+    /* Style the tab content */
+    .tab-year-content,
+    .tab-month-content {
+      display: none;
+    }
+
+    .tab-month-content {
+      h3 {
+        margin-bottom: 0.3rem;
+        margin-top: 1.125rem;
+      }
+
+      p {
+        margin-top: 0.3rem;
+      }
+
+      .transfer {
+        text-align: right;
+
+        h3 {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  .copy-button-container {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 30rem;
+
+    #copy-button {
+      animation: fadeEffect 1s;
+      -webkit-animation: fadeEffect 1s;
+      border: 1px solid;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-right: -65rem;
+      margin-top: 4rem;
+      min-width: 24.3rem;
+      padding: 1.5rem 2rem;
+      .fa-solid {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  .theme-button-container {
+    left: 0;
+    position: fixed;
+    top: 0;
+    #theme-button {
+      font-size: 3rem;
+      padding: 1rem;
+      .fa-solid.fa-moon {
+        display: var(--moon);
+      }
+      .fa-solid.fa-sun {
+        display: var(--sun);
+      }
+    }
+  }
+
+  .lang-button-container {
+    right: 0;
+    position: fixed;
+    top: 0;
+    #lang-button {
+      font-size: 3rem;
+      padding: 1rem;
+    }
+  }
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

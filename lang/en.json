@@ -1,0 +1,37 @@
+{
+  "header": {
+    "h1": {
+      "span": "Flat Rent"
+    },
+    "h2": "A handy tool to calculate the cost of rent for a flat that displays the calculations in a convenient form."
+  },
+  "tab": {
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
+  "container": {
+    "electricity": "ELECTRICITY",
+    "kWh": "kWh",
+    "difference": "difference",
+    "tariff": "tariff",
+    "coldWater": "COLD WATER",
+    "hotWater": "HOT WATER",
+    "cubicMeters": "m³",
+    "total": "TOTAL",
+    "transferToLandlord": "TRANSFER TO LANDLORD"
+  },
+  "copyButton": "Copy Rent Output",
+  "copyButtonSuccess": "Successfuly Copied"
+}

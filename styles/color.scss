@@ -1,0 +1,105 @@
+:root {
+  --primary: rgb(255, 255, 255);
+  --primary-alt: rgb(248, 248, 248);
+  --secondary: hsl(219, 79%, 66%);
+  --secondary-active: hsl(240, 100%, 40%);
+  --secondary-hover: hsl(225, 73%, 57%);
+  --success: rgb(61, 194, 105);
+  --tertiary: rgb(204, 204, 204);
+  --tertiary-active: rgb(192, 192, 192);
+  --tertiary-hover: rgb(220, 220, 220);
+  --text: rgb(13, 13, 13);
+  --text-alt: rgb(248, 248, 248);
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--text);
+  main {
+    .tab {
+      background-color: var(--secondary);
+      border-color: var(--tertiary);
+
+      button {
+        color: var(--text-alt);
+      }
+
+      button:hover {
+        background-color: var(--secondary-hover);
+      }
+
+      button.active {
+        background-color: var(--secondary-active);
+      }
+    }
+
+    .tab.months {
+      background-color: var(--primary-alt);
+
+      button {
+        color: var(--text);
+      }
+
+      button.active {
+        background-color: var(--tertiary-active);
+      }
+
+      button:hover {
+        background-color: var(--tertiary-hover);
+      }
+    }
+
+    .container {
+      border-color: var(--tertiary);
+      background-color: var(--primary-alt);
+    }
+  }
+
+  .copy-button-container {
+    #copy-button {
+      background-color: var(--secondary);
+      border-color: transparent;
+      color: var(--text-alt);
+    }
+
+    #copy-button:hover {
+      background-color: var(--secondary-hover);
+    }
+    
+    #copy-button:active {
+      background-color: var(--secondary-active);
+    }
+  }
+
+  .theme-button-container {
+    #theme-button {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--secondary);
+    }
+
+    #theme-button:hover {
+      color: var(--secondary-hover);
+    }
+    
+    #theme-button:active {
+      color: var(--secondary-active);
+    }
+  }
+
+  .lang-button-container {
+    #lang-button {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--secondary);
+    }
+
+    #lang-button:hover {
+      color: var(--secondary-hover);
+    }
+    
+    #lang-button:active {
+      color: var(--secondary-active);
+    }
+  }
+}

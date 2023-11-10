@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Styling -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <!-- Coloring -->
+  <link rel="stylesheet" type="text/css" href="styles/color.css" />
+  <meta charset="UTF-8">
+  <!-- Website's Author -->
+  <meta name="author" content="Markelov Arsenii">
+  <!-- Website's Description -->
+  <meta name="description" content="A handy tool to calculate the cost of rent for a flat that displays the calculations in a convenient form.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Website's Name -->
+  <title>Flat Rent</title>
+  <!-- Website's Icon -->
+  <link rel="icon" type="image/x-icon" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/64/key-icon.png">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ae090e8de5.js" crossorigin="anonymous"></script>
+  <!-- English Translation -->
+  <script src="lang/en.json" id="translations-en" type="application/json"></script>
+  <!-- Russian Translation -->
+  <script src="lang/ru.json" id="translations-ru" type="application/json"></script>
+  <!-- Language Switch Button -->
+  <script src="scripts/language.js" defer></script>
+  <!-- Tabs -->
+  <script src="scripts/tabs.js" defer></script>
+  <!-- Rent Calculator -->
+  <script src="scripts/rent.js" defer></script>
+  <!-- Copy Rent Output button -->
+  <script src="scripts/copy.js" defer></script>
+  <!-- Theme button -->
+  <script src="scripts/theme.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>
+      <i class="fa-solid fa-house-chimney"></i>
+      <span>Flat Rent</span>
+      <i class="fa-solid fa-coins"></i>
+    </h1>
+    <h2>A handy tool to calculate the cost of rent for a flat that displays the calculations in a convenient form.</h2>
+  </header>
+
+  <main>
+    <article class="tab years">
+      <button class="tab-year-links" onclick="openYear(event, '2021')">2021</button>
+      <button class="tab-year-links" onclick="openYear(event, '2022')">2022</button>
+      <button class="tab-year-links" onclick="openYear(event, '2023')">2023</button>
+      <!-- <button class="tab-year-links" onclick="openYear(event, '2024')">2024</button> -->
+    </article>
+    
+    <article id="2021" class="tab-year-content">
+      <section>
+        <article class="tab months">
+          <button class="tab-month-links" onclick="openMonth(event, 'june2021')">June</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'july2021')">July</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'august2021')">August</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'september2021')">September</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'october2021')">October</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'november2021')">November</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'december2021')">December</button>
+        </article>
+
+        <section class="container">
+          <article id="june2021" class="tab-month-content"></article>
+          <article id="july2021" class="tab-month-content"></article>
+          <article id="august2021" class="tab-month-content"></article>
+          <article id="september2021" class="tab-month-content"></article>
+          <article id="october2021" class="tab-month-content"></article>
+          <article id="november2021" class="tab-month-content"></article>
+          <article id="december2021" class="tab-month-content"></article>
+        </section>
+      </section>
+    </article>
+    
+    <article id="2022" class="tab-year-content">
+      <section>
+        <article class="tab months">
+          <button class="tab-month-links" onclick="openMonth(event, 'january2022')">January</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'february2022')">February</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'march2022')">March</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'april2022')">April</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'may2022')">May</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'june2022')">June</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'july2022')">July</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'august2022')">August</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'september2022')">September</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'october2022')">October</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'november2022')">November</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'december2022')">December</button>
+        </article>
+
+        <section class="container">
+          <article id="january2022" class="tab-month-content"></article>
+          <article id="february2022" class="tab-month-content"></article>
+          <article id="march2022" class="tab-month-content"></article>
+          <article id="april2022" class="tab-month-content"></article>
+          <article id="may2022" class="tab-month-content"></article>
+          <article id="june2022" class="tab-month-content"></article>
+          <article id="july2022" class="tab-month-content"></article>
+          <article id="august2022" class="tab-month-content"></article>
+          <article id="september2022" class="tab-month-content"></article>
+          <article id="october2022" class="tab-month-content"></article>
+          <article id="november2022" class="tab-month-content"></article>
+          <article id="december2022" class="tab-month-content"></article>
+        </section>
+      </section>
+    </article>
+    
+    <article id="2023" class="tab-year-content">
+      <section>
+        <article class="tab months">
+          <button class="tab-month-links" onclick="openMonth(event, 'january2023')">January</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'february2023')">February</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'march2023')">March</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'april2023')">April</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'may2023')">May</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'june2023')">June</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'july2023')">July</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'august2023')">August</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'september2023')">September</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'october2023')">October</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'november2023')">November</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'december2023')">December</button>
+        </article>
+
+        <section class="container">
+          <article id="january2023" class="tab-month-content"></article>
+          <article id="february2023" class="tab-month-content"></article>
+          <article id="march2023" class="tab-month-content"></article>
+          <article id="april2023" class="tab-month-content"></article>
+          <article id="may2023" class="tab-month-content"></article>
+          <article id="june2023" class="tab-month-content"></article>
+          <article id="july2023" class="tab-month-content"></article>
+          <article id="august2023" class="tab-month-content"></article>
+          <article id="september2023" class="tab-month-content"></article>
+          <article id="october2023" class="tab-month-content"></article>
+          <article id="november2023" class="tab-month-content"></article>
+          <article id="december2023" class="tab-month-content"></article>
+        </section>
+      </section>
+    </article>
+    
+    <!-- <article id="2024" class="tab-year-content">
+      <section>
+        <article class="tab months">
+          <button class="tab-month-links" onclick="openMonth(event, 'january2024')">January</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'february2024')">February</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'march2024')">March</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'april2024')">April</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'may2024')">May</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'june2024')">June</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'july2024')">July</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'august2024')">August</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'september2024')">September</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'october2024')">October</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'november2024')">November</button>
+          <button class="tab-month-links" onclick="openMonth(event, 'december2024')">December</button>
+        </article>
+
+        <section class="container">
+          <article id="january2024" class="tab-month-content"></article>
+          <article id="february2024" class="tab-month-content"></article>
+          <article id="march2024" class="tab-month-content"></article>
+          <article id="april2024" class="tab-month-content"></article>
+          <article id="may2024" class="tab-month-content"></article>
+          <article id="june2024" class="tab-month-content"></article>
+          <article id="july2024" class="tab-month-content"></article>
+          <article id="august2024" class="tab-month-content"></article>
+          <article id="september2024" class="tab-month-content"></article>
+          <article id="october2024" class="tab-month-content"></article>
+          <article id="november2024" class="tab-month-content"></article>
+          <article id="december2024" class="tab-month-content"></article>
+        </section>
+      </section>
+    </article> -->
+
+  </main>
+
+  <div class="copy-button-container">
+    <button id="copy-button">
+      <i class="fa-solid fa-clipboard-list"></i>
+      <span>Copy Rent Output</span>
+    </button>
+  </div>
+
+  <div class="theme-button-container">
+    <button id="theme-button">
+      <i class="fa-solid fa-moon"></i>
+      <i class="fa-solid fa-sun"></i>
+    </button>
+  </div>
+
+  <div class="lang-button-container">
+    <button id="lang-button">
+      <i class="fa-solid fa-language"></i>
+    </button>
+  </div>
+
+</body>
+</html>
