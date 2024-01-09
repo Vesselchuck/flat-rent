@@ -299,12 +299,10 @@ function calculations() {
   calculateAndDisplayRent(year2023[7].name, 28703, 436, 275);
   calculateAndDisplayRent(year2023[8].name, 28797, 446, 279);
   calculateAndDisplayRent(year2023[9].name, 28901, 455, 284);
+  calculateAndDisplayRent(year2023[10].name, 29025, 464, 291);
+  calculateAndDisplayRent(year2023[11].name, 29135, 473, 299);
 
   findAverages();
-
-  calculateAndDisplayRent(year2023[10].name, electricityAverage, coldWaterAverage, hotWaterAverage);
-  // calculateAndDisplayRent(year2023[11].name, electricityAverage, coldWaterAverage, hotWaterAverage);
-  // calculateAndDisplayRent(year2023[12].name, electricityAverage, coldWaterAverage, hotWaterAverage);
 
   // calculateAndDisplayRent(year2024[0].name, electricityAverage, coldWaterAverage, hotWaterAverage);
   // calculateAndDisplayRent(year2024[1].name, electricityAverage, coldWaterAverage, hotWaterAverage);
